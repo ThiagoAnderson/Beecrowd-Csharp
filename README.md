@@ -1,2 +1,2 @@
 # Beecrowd Csharp
- Resolvendo problemas do Beecrowd com C#,.
+ Resolvendo problemas do Beecrowd com C#.

@@ -1,18 +1,29 @@
-﻿
-string[] Numeros = Console.ReadLine().Split(' ');
-CalcularMultiplos(Numeros);
-static void CalcularMultiplos(string[] num)
-{
-    var x = Convert.ToInt32(num[0]);
-    var y = Convert.ToInt32(num[1]);
-    
+﻿using System;
 
-    if( Math.Max(x,y) % Math.Min(x,y) == 0)
+class URI
+{
+
+    static void Main(string[] args)
     {
-        Console.WriteLine("Sao Multiplos");
+
+        string[] Numeros = Console.ReadLine().Split(' ');
+        CalcularMultiplos(Numeros);
+
     }
-    else
+    static void CalcularMultiplos(string[] num)
     {
-        Console.WriteLine("Nao sao Multiplos");
+        var x = Convert.ToInt32(num[0]);
+        var y = Convert.ToInt32(num[1]);
+
+
+        if (Math.Max(x, y) % Math.Min(x, y) == 0)
+        {
+            Console.WriteLine("Sao Multiplos");
+        }
+        else
+        {
+            Console.WriteLine("Nao sao Multiplos");
+        }
     }
+
 }
